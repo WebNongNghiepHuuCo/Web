@@ -1,4 +1,4 @@
-# Getting Started with 1bitlab ReactJs
+# Getting Started with ReactJs
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
