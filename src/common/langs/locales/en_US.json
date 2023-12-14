@@ -1,0 +1,22 @@
+{
+  "PRODUCT": "PRODUCT",
+  "PRICE": "PRICE",
+  "AVAILABLE": "AVAILABLE",
+  "DISCOUNT": "DISCOUNT",
+  "PURCHASE": "PURCHASE",
+  "QUANTITY": "QUANTITY",
+  "SUBTOTAL": "SUBTOTAL",
+  "ACTION": "ACTION",
+  "emptyData": "No Data",
+
+  "service": {
+    "PERSONAL_ACCOUNT": "Personal account",
+    "BUSINESS_MANAGER": "Business Manager",
+    "FANPAGE": "Fanpage",
+    "PROFILE": "Profile",
+    "status": {
+      "NEW": "New",
+      "NORMAL": "Normal"
+    }
+  }
+}

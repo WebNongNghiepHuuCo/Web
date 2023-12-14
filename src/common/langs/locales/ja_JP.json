@@ -1,0 +1,11 @@
+{
+  "PRODUCT": "PRODUCT",
+  "PRICE": "PRICE",
+  "AVAILABLE": "AVAILABLE",
+  "DISCOUNT": "DISCOUNT",
+  "PURCHASE": "PURCHASE",
+  "QUANTITY": "QUANTITY",
+  "SUBTOTAL": "SUBTOTAL",
+  "ACTION": "ACTION",
+  "emptyData": "No Data"
+}

@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html,
+body,
+#root,
+canvas {
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+
+.text-loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-arrow {
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(#ffffff 13.44%,
+      rgba(255, 255, 255, 0) 50.74%,
+      #ffffff 86.59%) border-box;
+}
+
+.arrow {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 3px solid;
+  background: linear-gradient(90deg, #4ba9ff 0%, #c54bff 100%);
+  color: white;
+}
+
+.box-arrow:hover,
+.box-arrow:focus,
+.box-arrow:active {
+  background: linear-gradient(90deg, #4ba9ff 0%, #c54bff 100%);
+}
+
+.box-arrow:hover .arrow,
+.box-arrow:focus .arrow,
+.box-arrow:active .arrow {
+  background: white;
+}
+
+.box-arrow:hover svg,
+.box-arrow:focus svg,
+.box-arrow:active svg {
+  background: transparent;
+  color: #c54bff;
+}
+
+.top-about {
+  background-position: 50%;
+  background-size: cover;
+  height: 18rem;
+  width: 100%;
+}
+
+.nav-top-link {
+  color: #111827;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-top-link:hover {
+  color: #fff;
+}
+
+.active {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .top-about {
+    height: 50rem;
+  }
+}
+
+
+.button-3d {
+  --purple: #eea888;
+  --pink: #a014d6;
+  --blue: #3ec1ef;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  background-color: #1d4ed8;
+  color: #fff;
+  border-radius: 12px;
+  outline: none;
+  margin: 0;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.shapes {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border-radius: 12px;
+  background: linear-gradient(60deg,
+      var(--blue) 0%,
+      #d6cbf6 30%,
+      var(--pink) 70%);
+}
+
+.blush {
+  position: absolute;
+  bottom: -15px;
+  width: 100px;
+  height: 30px;
+  filter: blur(20px);
+}
+
+.blush.pink {
+  right: 20px;
+  background: var(--purple);
+}
+
+.blush.blue {
+  left: 20px;
+  background: var(--blue);
+}
+
+.shapes .container {
+  position: absolute;
+  top: -100px;
+  bottom: -100px;
+  left: -100px;
+  right: -100px;
+  width: calc(100% + 200px);
+  pointer-events: none;
+}
+
+.shapes canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.label {
+  width: 180px;
+  padding: 10px 0;
+  transform: translateZ(0);
+  font-weight: 700;
+  z-index: 1;
+}
+
+.default {
+  display: block;
+}
+
+.number {
+  padding: 20px 0;
+  width: 88px;
+  position: relative;
+  transform: translateZ(0);
+}
+
+.number:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  bottom: 1px;
+  width: 1px;
+  background-color: #35373f;
+}
+
+.current {
+  color: #8a8d9b;
+  opacity: 1;
+  display: block;
+}
+
+.new {
+  color: #fbfaaa;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: block;
+}
+
+.add {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(38px);
+  pointer-events: none;
+  color: #d0d0db;
+  display: block;
+}
+
+.padding-parent-contact {
+  padding: 20px 2.62rem;
+}
+
+.padding-whatsapp {
+  padding: 1.5rem 2.93rem;
+}
+
+.contact-telegram:hover svg {
+  fill: #fff;
+}
+
+.contact-telegram:hover span {
+  color: #fff
+}
+
+.gradient-about, .gradient-feedback {
+  background: radial-gradient(116.18% 118% at 50% 100%, rgba(99, 102, 241, .1) 0, rgba(218, 70, 239, .05) 41.83%, rgba(241, 244, 253, .07) 82.52%);
+}
+
+.ant-btn:not(.ant-btn-primary):not(.ant-btn-dangerous):not(.ant-btn-text):not(.ant-btn-link):focus,
+.ant-btn:not(.ant-btn-primary):not(.ant-btn-dangerous):not(.ant-btn-text):not(.ant-btn-link):hover {
+  background-color: #ededed;
+  border-color: #ededed;
+  color: #455560;
+}
+
+.circle-fill {
+  width: 65px;
+  height: 65px;
+  top: 12px;
+  left: 12px;
+  position: absolute;
+  box-shadow: 0 0 0 0 #c31d1d;
+  background-color: rgba(230, 8, 8, 0.7);
+  border-radius: 50%;
+  border: 2px solid transparent;
+  -webkit-animation: phone-vr-circle-fill 2.3s infinite ease-in-out;
+  animation: phone-vr-circle-fill 2.3s infinite ease-in-out;
+  transition: all .5s;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animuiion: zoom 1.3s infinite;
+  animation: zoom 1.3s infinite;
+}
+
+.img-circle {
+  background-color: #e60808;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  top: 25px;
+  left: 25px;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+  animation: phone-vr-circle-fill 1s infinite ease-in-out;
+}
+
+.fill-tele {
+  background: rgb(59 130 246 / 0.5) !important;
+  box-shadow: 0 0 0 0 rgb(59 20 226 / 0.2) !important;
+}
+
+.fill-googlle {
+  background: rgb(52 168 83 / 0.5) !important;
+  box-shadow: 0 0 0 0 rgb(52 168 83 / 0.2) !important;
+}
+
+.fill-mail {
+  background: rgb(251 188 5 / 0.5) !important;
+  box-shadow: 0 0 0 0 rgb(251 188 5 / 0.5) !important;
+}
