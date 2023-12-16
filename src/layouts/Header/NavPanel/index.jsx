@@ -54,8 +54,8 @@ export function NavPanel() {
       case ROUTE_PATH.HOME:
         navigate(ROUTE_PATH.HOME);
         break;
-      case ROUTE_PATH.FACEBOOK_SERVICE:
-        navigate(ROUTE_PATH.FACEBOOK_SERVICE);
+      case ROUTE_PATH.HATGIONG:
+        navigate(ROUTE_PATH.HATGIONG);
         break;
       case ROUTE_PATH.TIKTOK_SERVICE:
         navigate(ROUTE_PATH.TIKTOK_SERVICE);

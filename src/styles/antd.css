@@ -2820,8 +2820,8 @@ mark {
 
 .ant-btn-primary {
   color: #fff;
-  border-color: #fff !important;
-  background: #fff !important;
+  border-color: #fff;
+  background: #fff ;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
 }
@@ -2829,15 +2829,15 @@ mark {
 .ant-btn-primary:focus,
 .ant-btn-primary:hover {
   color: #fff;
-  border-color: #fff !important;
-  background: #fff !important;
+  border-color: #fff ;
+  background: #fff;
   opacity: 0.9;
 }
 
 .ant-btn-primary:active {
   color: #fff;
-  border-color: #fff !important;
-  background: #fff !important;
+  border-color: #fff ;
+  background: #fff ;
 }
 
 .ant-btn-ghost>a:only-child,

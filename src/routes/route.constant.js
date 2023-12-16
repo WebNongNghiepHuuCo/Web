@@ -4,9 +4,11 @@ export const ROUTE_PATH = {
   BUY_ACCOUNTS: '/buy-accounts',
   CART: '/cart',
   CHECKOUT: '/checkout',
-  FACEBOOK_SERVICE: '/facebook-service',
+  HATGIONG: '/hatgiong',
   TIKTOK_SERVICE: '/tiktok-service',
   CONTACT_US: '/contact-us',
   LOGIN: '/login',
-  REGISTER: '/register'
+  REGISTER: '/register',
+  NEWS: '/news',
+  NEWSDETAIL: '/news/:id'
 };

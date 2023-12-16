@@ -10,6 +10,10 @@ import { ConfigProvider } from 'antd';
 import HomePage from '~/pages/HomePage';
 import Login from '~/pages/Login';
 import Register from '~/pages/Register';
+import News from '~/pages/News';
+import NewsDetail from '~/pages/News/NewsDetail';
+import About from '~/pages/About';
+import HatGiong from '~/pages/HatGiong';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +44,38 @@ const router = createBrowserRouter([
             element: (
               <Suspense fallback={null}>
                 <Register />
+              </Suspense>
+            )
+          },
+          {
+            path: ROUTE_PATH.NEWS,
+            element: (
+              <Suspense fallback={null}>
+                <News />
+              </Suspense>
+            )
+          },
+          {
+            path: ROUTE_PATH.NEWSDETAIL,
+            element: (
+              <Suspense fallback={null}>
+                <NewsDetail />
+              </Suspense>
+            )
+          },
+          {
+            path: ROUTE_PATH.ABOUT_US,
+            element: (
+              <Suspense fallback={null}>
+                <About/>
+              </Suspense>
+            )
+          },
+          {
+            path: ROUTE_PATH.HATGIONG,
+            element: (
+              <Suspense fallback={null}>
+                <HatGiong />
               </Suspense>
             )
           }

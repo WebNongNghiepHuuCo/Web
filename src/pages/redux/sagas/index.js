@@ -17,6 +17,10 @@ import watchGetAllProduct from './product-management/get-all-product';
 //Checkout
 import watchCheckout from './checkout-management/checkout';
 
+//News
+import watchGetAllNews from './news-management/get-all-news';
+import watchGetNewsDetail from './news-management/get-news-detail';
+
 /**
  * Root saga
  */
@@ -36,6 +40,10 @@ export default function* sagas() {
     watchGetAllProduct(),
 
     //Checkout
-    watchCheckout()
+    watchCheckout(),
+
+    //News
+    watchGetAllNews(),
+    watchGetNewsDetail()
   ]);
 }

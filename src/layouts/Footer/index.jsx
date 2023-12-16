@@ -9,7 +9,7 @@ export default function Footer() {
         >
           <div className='logo-desktop'>
             <img
-              src='images/logo-new-04.png'
+              src={`${process.env.PUBLIC_URL}/images/logo-new-04.png`}
               width={200}
               height={200}
               alt='Image 1'

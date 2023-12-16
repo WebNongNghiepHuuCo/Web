@@ -42,6 +42,7 @@ export default function HomeBanner() {
           </SplideSlide>
         ))}
       </Splide>
+      
     </div>
   );
 }

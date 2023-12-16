@@ -5,9 +5,9 @@ import HomeBanner from './components/HomeBanner';
 const HomePage = () => {
   return (
     <BaseLayout>
-      <HomeBanner />
+        <HomeBanner/>
     </BaseLayout>
-  );
+  )
 };
 
 export default HomePage;

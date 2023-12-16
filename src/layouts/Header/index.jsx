@@ -26,17 +26,17 @@ export default function Header() {
       label: (
         <div
           className={`cursor-pointer nav-top-link mr-8 ${
-            window.location.pathname === ROUTE_PATH?.FACEBOOK_SERVICE &&
+            window.location.pathname === ROUTE_PATH?.HATGIONG &&
             'active'
           }`}
           onClick={() => {
-            if (window.location.pathname === ROUTE_PATH?.FACEBOOK_SERVICE) {
+            if (window.location.pathname === ROUTE_PATH?.HATGIONG) {
               window.scrollTo(0, 0);
             }
-            navigate(ROUTE_PATH.FACEBOOK_SERVICE);
+            navigate(ROUTE_PATH.HATGIONG);
           }}
         >
-          Facebook Rental Service
+          Hạt Giống
         </div>
       ),
       key: '0'
@@ -183,7 +183,8 @@ export default function Header() {
 
                 <div
                   className={`cursor-pointer nav-top-link mr-8 ${
-                    window.location.pathname === ROUTE_PATH?.ABOUT_US && 'active'
+                    window.location.pathname === ROUTE_PATH?.ABOUT_US &&
+                    'active'
                   }`}
                   onClick={() => {
                     if (window.location.pathname === ROUTE_PATH?.ABOUT_US) {
@@ -195,6 +196,21 @@ export default function Header() {
                   Giới Thiệu
                 </div>
 
+                <div
+                  className={`cursor-pointer nav-top-link mr-8 ${
+                    window.location.pathname === ROUTE_PATH?.NEWS &&
+                    'active'
+                  }`}
+                  onClick={() => {
+                    if (window.location.pathname === ROUTE_PATH?.NEWS) {
+                      window.scrollTo(0, 0);
+                    }
+                    navigate(ROUTE_PATH.NEWS);
+                  }}
+                >
+                  Tin tức
+                </div>
+
                 <Dropdown
                   menu={{
                     items
@@ -203,7 +219,7 @@ export default function Header() {
                   <div
                     className={`cursor-pointer nav-top-link mr-8 ${
                       (window.location.pathname ===
-                        ROUTE_PATH?.FACEBOOK_SERVICE ||
+                        ROUTE_PATH?.HATGIONG ||
                         window.location.pathname ===
                           ROUTE_PATH?.TIKTOK_SERVICE) &&
                       'active'
