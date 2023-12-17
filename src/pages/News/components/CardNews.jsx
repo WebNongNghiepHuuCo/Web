@@ -5,7 +5,7 @@ import { IMAGE_FALLBACK } from '~/common/constants';
 import { ROUTE_PATH } from '~/routes/route.constant';
 
 export default function CardNews(props) {
-  const { data} = props;
+  const { data } = props;
   const navigate = useNavigate(); // Get the navigate function
 
   const handleCardClick = () => {
@@ -13,13 +13,17 @@ export default function CardNews(props) {
   };
   return (
     <div className='flex mb-3'>
-      <Image
-        style={{ borderRadius: 10 }}
-        className='w-[300px] h-[200px]'
-        src={`${data?.img}`}
-        fallback={IMAGE_FALLBACK}
-        alt=''
-      />
+      <div className='w-[300px] h-[200px]'>
+        <Image
+          style={{ borderRadius: 10, objectFit: 'fill' }}
+          width={300}
+          height={200}
+          src={`${data?.img}`}
+          fallback={IMAGE_FALLBACK}
+          alt=''
+        />
+      </div>
+
       <div className='ml-[18px] '>
         <div
           className='text-[18px] font-bold text-blue-500'

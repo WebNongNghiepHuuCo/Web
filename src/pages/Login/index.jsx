@@ -57,8 +57,6 @@ const Login = () => {
               >
                 <Input
                   style={{
-                    background:
-                    '#73c509',
                     borderRadius: '30px'
                   }}
                 />
@@ -93,7 +91,7 @@ const Login = () => {
                   block
                   style={{
                     background:
-                      'transparent linear-gradient(90deg,#2f58cc,#53d3d3) 0 0 no-repeat padding-box',
+                      '#73c509',
                     border: 'none',
                     borderRadius: 40
                   }}

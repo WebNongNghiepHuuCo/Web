@@ -10,7 +10,7 @@ export default function CardNewsDetail(props) {
         <Image
             style={{ borderRadius: 10 }}
             className='w-[300px] h-[200px]'
-            // src="./images/news/may_phunthuoc_1702674912257_415495140.jpg"
+            // src="./images/news/rau-nha-kinh-stc2.jpg"
             src={`${process.env.REACT_APP_BASE_URL}${data?.img}`}
             fallback={IMAGE_FALLBACK}
             alt=''
